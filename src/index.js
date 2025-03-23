@@ -43,7 +43,7 @@ let form = document.getElementById('votes-form');
 
 
 
-
+//Addition of votes 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     let characterVotes = document.getElementById('vote-count')
@@ -63,6 +63,13 @@ form.addEventListener('submit', (e) => {
 })
 
 
+//Reset functionality 
+let resetBtn = document.getElementById('reset-btn')
 
-
+resetBtn.addEventListener('click', () => {
+    let characterVotes = document.getElementById('vote-count')
+    characterVotes.innerText = '0'
+    
+    
+})
 
